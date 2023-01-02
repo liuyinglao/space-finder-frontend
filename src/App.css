@@ -1,15 +1,24 @@
+/* All the css attributes can be found at https://developer.mozilla.org/en-US/docs/Web/CSS */
+
 .App {
   text-align: center;
 }
 
 .App-logo {
+  /* 40 vmin means 40 viewport min(height, width) unit
+  https://www.w3.org/TR/css3-values/#viewport-relative-lengths */
   height: 40vmin;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events */
   pointer-events: none;
 }
 
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#media_features */
+/* A conditional group rule that will apply its content if the device meets 
+the criteria of the condition defined using a media query. */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion */
+    animation: App-logo-spin infinite 5s linear;
   }
 }
 
@@ -28,11 +37,14 @@
   color: #61dafb;
 }
 
+/* control the key frames to make animation look seamless */
+/* Describes the aspect of intermediate steps in a CSS animation sequence */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(180deg);
   }
 }

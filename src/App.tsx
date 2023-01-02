@@ -1,5 +1,9 @@
 import React from 'react';
+
+// import the whole jsx module as "logo"
 import logo from './logo.svg';
+
+// every tsx file should has it own css file to configure element styles
 import './App.css';
 
 function App() {
